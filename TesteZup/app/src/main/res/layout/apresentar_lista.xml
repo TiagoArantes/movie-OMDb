@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/idFechar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Fechar" />
+
+    <Button
+        android:id="@+id/idAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/idFechar"
+        android:layout_alignLeft="@+id/idStatus"
+        android:layout_alignStart="@+id/idStatus"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:text="Anterior" />
+
+    <Button
+        android:id="@+id/idProximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idStatus"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/idAnterior"
+        android:layout_toRightOf="@+id/idAnterior"
+        android:text="Próximo" />
+
+    <TextView
+        android:id="@+id/idCadastradosLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Títulos Cadastrados" />
+
+    <TextView
+        android:id="@+id/idFilmeLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idFilmeListado"
+        android:layout_alignStart="@+id/idFilmeListado"
+        android:layout_below="@+id/idFilmeListado"
+        android:text="[Filme]" />
+
+    <TextView
+        android:id="@+id/idAnoLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idFilmeLista"
+        android:layout_alignStart="@+id/idFilmeLista"
+        android:layout_below="@+id/idFilmeLista"
+        android:text="Lançamento" />
+
+    <TextView
+        android:id="@+id/anoLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idAnoLista"
+        android:layout_alignStart="@+id/idAnoLista"
+        android:layout_below="@+id/idAnoLista"
+        android:text="[Ano]" />
+
+    <TextView
+        android:id="@+id/idFilmeListado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idCadastradosLista"
+        android:layout_alignStart="@+id/idCadastradosLista"
+        android:layout_below="@+id/idCadastradosLista"
+        android:layout_marginTop="11dp"
+        android:text="Título" />
+
+    <TextView
+        android:id="@+id/idDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idNotaDuracao"
+        android:layout_alignStart="@+id/idNotaDuracao"
+        android:layout_below="@+id/idNotaDuracao"
+        android:text="Descrição:" />
+
+    <TextView
+        android:id="@+id/descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idDescricao"
+        android:layout_alignStart="@+id/idDescricao"
+        android:layout_below="@+id/idDescricao"
+        android:text="[Descrição]" />
+
+    <TextView
+        android:id="@+id/idStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/idAnterior"
+        android:layout_alignLeft="@+id/descricao"
+        android:layout_alignStart="@+id/descricao"
+        android:layout_marginBottom="12dp"
+        android:text="Filmes" />
+
+    <TextView
+        android:id="@+id/idAtores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/anoLista"
+        android:layout_alignStart="@+id/anoLista"
+        android:layout_below="@+id/atores"
+        android:text="[Atores]" />
+
+    <TextView
+        android:id="@+id/atores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idAtores"
+        android:layout_alignStart="@+id/idAtores"
+        android:layout_below="@+id/anoLista"
+        android:text="Atores:" />
+
+    <TextView
+        android:id="@+id/genero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idAtores"
+        android:layout_alignStart="@+id/idAtores"
+        android:layout_below="@+id/idAtores"
+        android:text="Genero:" />
+
+    <TextView
+        android:id="@+id/idGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/genero"
+        android:layout_alignStart="@+id/genero"
+        android:layout_below="@+id/genero"
+        android:text="[Genero]" />
+
+    <TextView
+        android:id="@+id/idNotaDuracao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idGenero"
+        android:layout_alignStart="@+id/idGenero"
+        android:layout_below="@+id/idGenero"
+        android:text="[IMDB]" />
+</RelativeLayout>

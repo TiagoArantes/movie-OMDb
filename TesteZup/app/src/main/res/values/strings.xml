@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TesteZup</string>
+    <string name="action_settings">Settings</string>
+    <string name="frase">Bem vindo ao App Filmes e Séries</string>
+</resources>
